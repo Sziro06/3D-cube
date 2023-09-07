@@ -1,5 +1,5 @@
 let scene = new THREE.Scene();
-let camera = new THREE.PerspectiveCamera( 75, window.innerWidth /window.innerHeight);
+let camera = new THREE.PerspectiveCamera( 65, window.innerWidth /window.innerHeight);
 
 let renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -23,7 +23,7 @@ textureAll.push(new THREE.MeshBasicMaterial( { map: texture6} ));
 let cube = new THREE.Mesh( geometry, textureAll);
 scene.add( cube );
 
-camera.position.z = 1.3;
+camera.position.z = 2;
 
 function animate(){
     requestAnimationFrame( animate );
